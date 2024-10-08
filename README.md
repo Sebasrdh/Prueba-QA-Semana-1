@@ -44,7 +44,7 @@ Para visualizar el sitio localmente, necesitarás:
 - git clone https://github.com/Sebasrdh/Prueba-QA-Semana-1
 
 ## Acceder al directorio del proyecto:
-- cd nombre-del-repositorio
+- cd Prueba-QA-Semana-1
 
 ## Ejecutar el sitio localmente:
 - Abre el archivo index.html en tu navegador web para visualizar el sitio.
