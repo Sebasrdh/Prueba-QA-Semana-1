@@ -1,28 +1,28 @@
-#Programa Eureka 2024 - Semana 1
+### Programa Eureka 2024 - Semana 1
 
-#Conceptos a manejar
-•Comprender el rol de un QA
-•Definir qué habilidades debe tener un QA
-•Analizar las ventajas y desventajas del lenguaje Java
-•Establecer qué aspectos debe conocer un QA que desarrolla aplicaciones con el lenguaje Java
-•Crear un sitio HTML estático con Bootstrap
+### Conceptos a manejar
+-Comprender el rol de un QA
+-Definir qué habilidades debe tener un QA
+-Analizar las ventajas y desventajas del lenguaje Java
+-Establecer qué aspectos debe conocer un QA que desarrolla aplicaciones con el lenguaje Java
+-Crear un sitio HTML estático con Bootstrap
 
-#Ejercicio semana 1
-•	Crea un sitio HTML estático, usando como base la versión 5.
-•	Se pide usar Bootstrap como librería de diseño, o bien una similar.
-•	Los elementos del proyecto deben estar correctamente divididos, esto es en directorios que los separen debidamente. 
-•	Debes crear una página de inicio que indique una introducción a las secciones siguientes.
-•	Dentro del proyecto se debe crear una página HTML por cada una de las preguntas que se indican a continuación:
+### Ejercicio semana 1
+-	Crea un sitio HTML estático, usando como base la versión 5.
+-	Se pide usar Bootstrap como librería de diseño, o bien una similar.
+-	Los elementos del proyecto deben estar correctamente divididos, esto es en directorios que los separen debidamente. 
+-	Debes crear una página de inicio que indique una introducción a las secciones siguientes.
+-	Dentro del proyecto se debe crear una página HTML por cada una de las preguntas que se indican a continuación:
     o	¿Qué rol cumple un QA?
     o	¿Qué habilidades debe tener un QA?
     o	¿Qué es el lenguaje de programación Java? ¿Cuáles son sus ventajas y desventajas en el desarrollo de aplicativos webs?
     o	¿Qué aspectos debe considerar un QA al validar código fuente? ¿Qué formas existen para validar el código fuente?
-•	Toda información debe estar correctamente referenciada. Para ello, agregue una sección adicional que indique la bibliografía.
+-	Toda información debe estar correctamente referenciada. Para ello, agregue una sección adicional que indique la bibliografía.
 
-#Alcances
-•Publicar el ejercicio en un repositorio GitHub
-•el repositorio debe tener un README que señale los pasos para descargar y ejecutar la solución
-•El sitio estático generado debe ser publicado en GitHub Pages
+### Alcances
+- Publicar el ejercicio en un repositorio GitHub
+- El repositorio debe tener un README que señale los pasos para descargar y ejecutar la solución
+- El sitio estático generado debe ser publicado en GitHub Pages
 
 
 El proyecto está organizado en los siguientes directorios:
