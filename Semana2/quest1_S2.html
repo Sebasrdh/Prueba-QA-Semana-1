@@ -34,9 +34,9 @@
                 <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light"
                     id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
                     <div class="navbar-nav w-100">
-                        <a href="index.html" class="nav-item nav-link">Homepage</a>
-                        <a href="Semana1/intro_S1.html" class="nav-item nav-link">Semana 1</a>
-                        <a href="../Semana2/intro_S2.html" class="nav-item nav-link">Semana 2</a>
+                        <a href="../index.html" class="nav-item nav-link">Homepage</a>
+                        <a href="../Semana1/intro_S1.html" class="nav-item nav-link">Semana 1</a>
+                        <a href="intro_S2.html" class="nav-item nav-link">Semana 2</a>
                     </div>
                 </nav>
             </div>
@@ -64,13 +64,135 @@
     </nav>
     <!-- Navbar End -->
 
+    <h1 class="text-center text-dark">¿Qué tipos de pruebas es posible aplicar durante el proceso de desarrollo y
+        ejecución de un software?</h1>
+    <img src="../img/imgQ1S2.jpg" alt="Image" class="img-fluid mx-auto d-block" style="margin-top: 2rem;">
 
-    
+    <div class="container mt-3">
+        <div class="text-dark p-3" style="background-color: skyblue;">
+            <h4>
+                Durante el proceso de desarrollo y ejecución de un software podemos aplicar multiples tipos de pruebas
+                <strong>(Funcionales y No Funcionales)</strong>,
+                para así asegurar que el
+                software cumpla con los requisitos y funcione correctamente en diversos escenarios.
+            </h4>
+        </div>
+
+        <div class="container mt-3">
+            <h1 class="text-center text-dark">Pruebas Funcionales</h1>
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <div class="card text-dark h-100" style="background-color: azure;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Pruebas Unitarias</h3>
+                            <p>Verifican el correcto funcionamiento de componentes individuales, como funciones o
+                                métodos, en aislamiento, utilizando dobles de prueba (stubs o mocks) para simular
+                                dependencias. Sirven de base para aplicaciones más complejas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card text-dark h-100" style="background-color: azure;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Pruebas de integración</h3>
+                            <p>Evalúan cómo interactúan entre sí los módulos del sistema, asegurándose de que funcionen
+                                correctamente juntos, aunque cada uno funcione bien por separado. Son previas a las
+                                pruebas de sistema.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6" style="margin-top: 1rem;">
+                    <div class="card text-dark h-100" style="background-color: azure;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Pruebas del sistema</h3>
+                            <p>Prueban el sistema completo en su entorno previsto, considerando hardware y software,
+                                para detectar errores y asegurar la calidad. Se realizan tras las pruebas de
+                                integración.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6" style="margin-top: 1rem;">
+                    <div class="card text-dark h-100" style="background-color: azure;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Pruebas de aceptación</h3>
+                            <p>Ejecutadas al final del desarrollo, verifican que el sistema cumple con los requisitos de
+                                los usuarios o partes interesadas. Involucran pruebas alfa (en el lugar de desarrollo) y
+                                beta (en el entorno del usuario).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6" style="margin-top: 1rem;">
+                    <div class="card text-dark h-100" style="background-color: azure;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Pruebas de Regresión</h3>
+                            <p>Aseguran que las actualizaciones o cambios no afecten negativamente las funcionalidades
+                                existentes. Utilizan una combinación de pruebas manuales y automatizadas para garantizar
+                                la estabilidad del sistema tras modificaciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            <h1 class="text-center text-dark">Pruebas No Funcionales</h1>
+            <div class="row g-3">
+                <div class="col-sm-6" style="margin-top: 1rem;">
+                    <div class="card text-dark h-100" style="background-color: azure;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Pruebas de Seguridad</h3>
+                            <p>Determinan la capacidad del sistema para proteger datos y evitar accesos no autorizados,
+                                evaluando autenticación, autorización y vulnerabilidades.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6" style="margin-top: 1rem;">
+                    <div class="card text-dark h-100" style="background-color: azure;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Pruebas de Rendimiento</h3>
+                            <p>Miden la eficiencia y solidez del sistema bajo diversas cargas y condiciones, incluyendo
+                                pruebas de carga, estrés y escalabilidad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6" style="margin-top: 1rem;">
+                    <div class="card text-dark h-100" style="background-color: azure;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Pruebas de Usabilidad</h3>
+                            <p>Evalúan la facilidad de uso del sistema para el usuario final, asegurando que sea
+                                amigable y cumpla con las necesidades del usuario, mejorando su experiencia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6" style="margin-top: 1rem;">
+                    <div class="card text-dark h-100" style="background-color: azure;">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Pruebas de Compatibilidad</h3>
+                            <p>Aseguran que el software funcione correctamente en distintos sistemas operativos,
+                                navegadores y dispositivos, identificando problemas específicos de cada plataforma para
+                                ampliar el alcance del sistema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
         <div class="row px-xl-5 pt-5">
             <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
-                <h5 class="text-secondary text-uppercase mb-4">Trabajo Semana 1</h5>
+                <h5 class="text-secondary text-uppercase mb-4">Trabajo Semanal 3IT</h5>
                 <p class="mb-4">Sebastián González Orellana</p>
                 <p>QA Funcional 3IT</p>
             </div>
