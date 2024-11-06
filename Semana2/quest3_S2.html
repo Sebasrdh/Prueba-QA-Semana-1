@@ -65,7 +65,138 @@
     <!-- Navbar End -->
 
     <h1 class="text-center text-dark">Plan de pruebas</h1>
-<img src="../img/Plan_pruebas.jpg" alt="Image" class="img-fluid mx-auto d-block">
+    <img src="../img/Plan_pruebas.jpg" alt="Image" class="img-fluid mx-auto d-block">
+
+    <div class="container mt-3">
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <div class="card text-dark h-100" style="background-color: azure;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Objetivos del Plan de Pruebas</h3>
+                        <li>Verificar la correcta funcionalidad de cada endpoint en el contexto de las entidades
+                            relacionadas: Capacitación, Tritiano, Postulante, Cliente, Célula, Rol, Proceso, Entrevista,
+                            Pregunta, Respuesta, Estadísticas, Etapa, Rol de Usuario y Usuario.</li>
+                        <li>Garantizar que cada acción CRUD y búsqueda específica (por ID, filtros de búsqueda) devuelva
+                            el resultado esperado, que el sistema gestione errores de manera adecuada y que las
+                            búsquedas y filtros funcionen correctamente.</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card text-dark h-100" style="background-color: azure;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Tipos de Pruebas</h3>
+                        <ul>
+                            <li><strong>Pruebas Unitarias:</strong> Pruebas a nivel de código para validar las funciones
+                                individuales que gestionan cada endpoint</li>
+                            <li><strong>Pruebas de Integración:</strong> Validación de la interacción entre módulos,
+                                asegurando que los endpoints devuelvan la información correcta cuando interactúan entre
+                                sí .</li>
+                            <li><strong>Pruebas de Sistema:</strong> Verificación del flujo del sistema para
+                                asegurar que todas las funcionalidades trabajen correctamente.</li>
+                            <li><strong>Pruebas de Aceptación:</strong> Asegurar que los endpoints cumplan con los
+                                requisitos funcionales y no funcionales esperados por los usuarios finales.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card text-dark h-100" style="background-color: azure; margin-top: 1rem;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Especificación de Pruebas por Endpoint</h3>
+                        <p>General para CRUD:</p>
+                        <ul>
+                            <li><strong>Listar (GET):</strong> Verificar que se devuelvan todos los registros de la
+                                entidad solicitada, y que se muestren con la estructura y cantidad de datos esperados.
+                            </li>
+                            <li><strong>Crear (POST):</strong> Validar que los datos ingresados se registren
+                                correctamente en la base de datos y que los errores (campos faltantes o datos
+                                incorrectos) generen mensajes de error adecuados.</li>
+                            <li><strong>Editar (PUT/PATCH):</strong> Comprobar que los datos de un registro existente se
+                                actualicen correctamente y que la respuesta contenga la confirmación de éxito.</li>
+                            <li><strong>Eliminar (DELETE):</strong> Confirmar que el registro se elimine y no sea
+                                accesible posteriormente; asegurar que la eliminación de registros no afecte otras
+                                entidades dependientes.</li>
+                        </ul>
+
+                        <h6>Capacitación, Tritiano, Postulante, Cliente, Célula, Rol, Proceso, Entrevista, Pregunta,
+                            Respuesta:</h6>
+                        <ul>
+                            <li><strong>Obtener por ID (GET):</strong> Validar que el sistema devuelva el registro
+                                correcto al buscar por ID, y que responda con un error en caso de un ID inexistente.
+                            </li>
+                            <li><strong>Listados con filtros:</strong> Para endpoints con filtros de paginación, nombre,
+                                apellido, rol, célula, y fecha, comprobar que los filtros funcionen correctamente y que
+                                los resultados sean precisos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6">
+                <div class="card text-dark h-100" style="background-color: azure; margin-top: 1rem;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Estrategia de Ejecución de Pruebas</h3>
+                        <p>Define la frecuencia y el orden de ejecución de las pruebas:</p>
+                        <ul>
+                            <li><strong>Pruebas Automatizadas:</strong> Automatizar pruebas de endpoints CRUD y
+                                obtención de datos por ID usando Postman. Se deben considerar pruebas de regresión cada
+                                vez que se hagan cambios en el
+                                código.</li>
+                            <li><strong>Pruebas Manuales:</strong> Para flujos complejos y casos de aceptación de
+                                usuarios, se realizaran pruebas manuales para asegurar que los escenarios cumplan
+                                con los requisitos.</li>
+                            <li><strong>Pruebas de Seguridad:</strong> Asegurar que todos los endpoints protegidos por
+                                autenticación y autorización (JWT) están correctamente implementados y que los datos
+                                sensibles no sean accesibles sin permisos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-6">
+                <div class="card text-dark h-100" style="background-color: azure; margin-top: 2rem;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Criterios de Aceptación</h3>
+                        <p>Define cuándo se considera que una prueba es satisfactoria:</p>
+                        <ul>
+                            <li><strong>Funcionalidad:</strong> Todos los endpoints CRUD y de búsquedas específicas
+                                deben responder correctamente en términos de estructura, datos y errores gestionados
+                                adecuadamente.</li>
+                            <li><strong>Seguridad:</strong> Las pruebas de autenticación y autorización deben asegurar
+                                que sólo los usuarios autorizados accedan a los endpoints protegidos.</li>
+                            <li><strong>Compatibilidad:</strong> Los endpoints deben responder correctamente en diversos
+                                entornos de prueba, como diferentes navegadores y sistemas operativos.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card text-dark h-100" style="background-color: azure; margin-top: 2rem;">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Informe de Resultados y Seguimiento de Errores</h3>
+                        <p>Documentar y seguir los resultados de las pruebas:</p>
+                        <ul>
+                            <li><strong>Documentación de Resultados:</strong> Para cada caso de prueba, se documentara si la
+                                prueba pasó o falló, y se registraran los errores de forma detallada.</li>
+                            <li><strong>Registro de Errores:</strong> Se utilizara una herramienta de seguimiento de
+                                incidencias (como Jira, Trello o cualquier otro gestor de bugs) para registrar,
+                                priorizar y hacer seguimiento de los errores encontrados durante las pruebas.</li>
+                            <li><strong>Seguimiento de Correcciones:</strong> Verificar que todos los errores reportados
+                                sean corregidos y realizar pruebas adicionales para confirmar que las correcciones no
+                                afectaron otras funcionalidades del sistema.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
