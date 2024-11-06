@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Semana 1 3IT</title>
+    <title>Question 4 Semana 2</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <!-- Google Web Fonts -->
@@ -15,7 +15,6 @@
 
     <!-- Libraries Stylesheet -->
     <link href="../lib/animate/animate.min.css" rel="stylesheet">
-
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
@@ -55,8 +54,6 @@
                             <a href="quest4_S2.html" class="nav-item nav-link">Question 4</a>
                             <a href="bibliography_S2.html" class="nav-item nav-link">Bibliografía</a>
                         </div>
-                        <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
-                        </div>
                     </div>
                 </nav>
             </div>
@@ -65,7 +62,62 @@
     <!-- Navbar End -->
 
     <h1 class="text-center text-dark">Estructura casos de pruebas</h1>
-<img src="../img/plantilla_pruebas.jpg" alt="Image" class="img-fluid mx-auto d-block" style="height: 80rch; width: auto;">
+    <img src="../img/plantilla_pruebas.jpg" alt="Image" class="img-fluid mx-auto d-block" style="height: 80vh; width: auto;">
+    <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th>ID del Caso de Prueba</th>
+                <th>Título</th>
+                <th>Descripción</th>
+                <th>Precondiciones</th>
+                <th>Datos de Prueba</th>
+                <th>Pasos</th>
+                <th>Resultado Esperado</th>
+                <th>Resultado Obtenido</th>
+                <th>Estado</th>
+                <th>Observaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>CP-001</td>
+                <td>Validación de creación de cliente</td>
+                <td>Verifica que el sistema cree correctamente un cliente con datos válidos.</td>
+                <td>Usuario autenticado</td>
+                <td>{ "nombre": "Juan", "apellido": "Pérez", "email": "juan@example.com" }</td>
+                <td>1. Realizar POST en /cliente <br> 2. Verificar respuesta HTTP 201</td>
+                <td>HTTP 201 Created con datos del cliente</td>
+                <td>-</td>
+                <td>Pendiente</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>CP-002</td>
+                <td>Validación de obtención de cliente por ID</td>
+                <td>Verifica que el sistema devuelva el cliente correcto cuando se consulta por ID.</td>
+                <td>Cliente existente</td>
+                <td>ID: 1</td>
+                <td>1. Realizar GET en /cliente/1 <br> 2. Verificar que los datos devueltos correspondan al cliente con ID 1</td>
+                <td>Cliente con ID 1 y datos correspondientes</td>
+                <td>-</td>
+                <td>Pendiente</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>CP-003</td>
+                <td>Validación de eliminación de cliente</td>
+                <td>Verifica que el cliente se elimine correctamente y no sea accesible después de su eliminación.</td>
+                <td>Cliente existente</td>
+                <td>ID: 1</td>
+                <td>1. Realizar DELETE en /cliente/1 <br> 2. Intentar obtener el cliente con GET en /cliente/1</td>
+                <td>HTTP 404 Not Found</td>
+                <td>-</td>
+                <td>Pendiente</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
@@ -91,7 +143,6 @@
         </div>
     </div>
     <!-- Footer End -->
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
